@@ -198,11 +198,19 @@ if ($AGE >= 21 AND $AGE <= 40 AND $GENDER == "female") {
 	<input type="submit" name="submit" value="submit"> 
 </form>
 <?php
-if (empty($_GET['name']) or empty($_GET['note'])){
+if (empty($_GET['name']) OR empty($_GET['note'])){
 	echo 'Something is missing';
 } else if ($_GET['note'] <= 4){
 	echo 'This work is really bad. What a dumb kid!';
-} else if ($_GET['note'] >=5 and $_GET['note'] <= 9){
+} else if ($_GET['note'] >=5 AND $_GET['note'] <= 9){
 	echo 'This is not sufficient. More studying is required.';
+} else if ($_GET['note'] == 10){
+	echo 'barely enough!';
+} else if ($_GET['note'] >= 11 AND $_GET['note'] <= 14){
+	echo 'Not bad!';
+} else if ($_GET['note'] >= 15 AND $_GET['note'] <= 18){
+	echo 'Bravo, bravissimo!';
+} else if ($_GET['note'] >= 19 AND $_GET['note'] <= 20){
+	echo 'Too good to be true : confront the cheater!';
 }
 ?>
