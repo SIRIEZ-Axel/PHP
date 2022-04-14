@@ -8,11 +8,12 @@
 </form>
 <?php
 $gender = $_GET['gender'];
+$gif1 = '<iframe src="https://giphy.com/embed/lN1MTl03Qls145LJ3w" width="480" height="480"</iframe>';
+$gif2 = '<iframe src="https://giphy.com/embed/BzyTuYCmvSORqs1ABM" width="480" height="480"></iframe>';
+$gif3 = '<iframe src="https://giphy.com/embed/JmgHQ8YJrfs5F6RpK4" width="480" height="480" ></iframe>';
 
-$gif2 = file_get_contents("http://path.to/gif/pic.gif");
-$gif3 = file_get_contents("http://path.to/gif/pic.gif");
-
-$human = $gender == 'unicorn' ? $gif1 : 'Cat' ;
+$human = ($gender == 'unicorn' ? $gif1 : ($gender == 'cat' ? $gif2 : $gif3));
 
 echo $human;
 ?>
+
