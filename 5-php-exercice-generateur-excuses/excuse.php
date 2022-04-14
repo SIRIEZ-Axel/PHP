@@ -74,6 +74,13 @@
         display: flex;
         justify-content: center;
     }
+    .submit{
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    padding: 15px 15px;
+}
 </style>
 
 <footer>
