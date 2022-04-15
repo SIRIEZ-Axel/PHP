@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 	<link rel="icon" href="favicon.png">
     <title>Consolidation</title>
 </head>
@@ -52,7 +52,7 @@
     ?>
 
 
-<style>
+<!-- <style>
     body{
         max-width: 1200px;
         font-family: 'Roboto', sans-serif;
@@ -81,7 +81,7 @@
     border: none;
     padding: 15px 15px;
 }
-</style>
+</style> -->
 
 <footer>
     <img src="favicon.png" alt="croix rouge" width="300">
