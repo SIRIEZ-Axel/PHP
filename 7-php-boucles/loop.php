@@ -43,12 +43,6 @@
     ?>
 
 <h2>exercice 4</h2>
-<form action="loop.php" method="get">
-    <select name="">
-        <option name="list" value="list"></option>
-    </select>
-</form>
-
     <?php
         $countries = $_GET['list'];
         $countries = array(
@@ -62,13 +56,23 @@
             'EN' => 'Angleterre',
             'SU' => 'Suisse',
             'AU' => 'Autriche',
+        
         );
-
-        foreach($countries as $country){
-            echo '<pre>';
-            print_r($country);
-            echo '</pre>';
-        }
+        
     ?>
+<form action="loop.php" method="get">
+    <select name="">
+        <option <?php echo "name=".$key."" ?> value="list"
+        <?php
+            foreach($countries as $key){
+                echo '<pre>';
+                print_r($key);
+                echo '</pre>';
+            }
+        ?>
+        </option>
+    </select>
+</form>
+
 </body>
 </html>
